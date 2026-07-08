@@ -53,7 +53,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -74,23 +74,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-.modal button {
-    width: 100px;
-    margin: 10px;
-    padding: 10px;
-    cursor: pointer;
-    font-family: Tajawal;
-    font-weight: bold;
-}
 
 .add, .del {
     position: fixed;
     bottom: 5%;
     right: 5%;
-    padding: 10px;
-    cursor: pointer;
-    font-family: Tajawal;
-    font-weight: bold;
 }
 
 .del {
@@ -99,12 +87,18 @@ body {
 }
 
 button {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
     background-color: #3846c0;
     color: #fff;
     border: none;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
+    font-family: Tajawal;
+    font-weight: bold;
 }
 button:hover {
     background-color: #37359c;
