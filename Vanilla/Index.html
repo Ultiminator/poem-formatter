@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Poem Formatter</title>
+</head>
+<body>
+    <div id="poem" class="poem">
+        <div class="line">
+            <div>رجعت لنفسي فاتهمت حصاتى</div>
+            <div class="abs">رَجَعْتُ لنفسي فاتهمت حصاتى</div>
+        </div>
+        <div class="line ltr">
+            <div>وناديت قومى فاحتسبت حياتى</div>
+            <div class="abs">وناديت قومى فاحتسبت حياتى</div>
+        </div>
+        <div class="line">
+            <div>رجعت لنفسي فاتهمت حصاتى</div>
+            <div class="abs">رجعت لنفسي فاتهمت حصاتى</div>
+        </div>
+        <div class="line ltr">
+            <div>وناديت قومى فاحتسبت حياتى</div>
+            <div class="abs">وناديت قومى فاحتسبت حياتى</div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <textarea name="input" id="input"></textarea>
+        <div class="buttons">
+            <button onclick="formatText()">تنسيق</button>
+            <button onclick="clearField()">مسح</button>
+            <button onclick="hide()">إلغاء</button>
+        </div>
+    </div>
+
+    <button class="add" onclick="showModal()">إضافة</button>
+    <button class="del" onclick="window.print()">طباعة</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

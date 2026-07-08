@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* make only the poem section is visible to print */
+@media print {
+    * {
+        visibility: hidden;
+    }
+    .poem, .poem * {
+        visibility: visible;
+    }
+}
+
+body {
+    padding: 0px 20px;
+}
+.poem {
+    font-family: Amiri;
+    font-size: 26px;
+    color: #dd2380;
+    background-color: #111;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 20px auto;
+    width: 97%;
+    max-width: 600px;
+}
+
+.line{
+    position: relative;
+    height: auto;
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+.ltr {
+    direction: ltr;
+    text-align: left;
+}
+
+.abs {
+    position: absolute;
+    top: 0;
+    color: #eee;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.modal #input {
+    resize: none;
+    width: 90%;
+    max-width: 800px;
+    height: 50vh;
+    font-family: Tajawal;
+    font-size: 20px;
+}
+.modal .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.modal button {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Tajawal;
+    font-weight: bold;
+}
+
+.add, .del {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Tajawal;
+    font-weight: bold;
+}
+
+.del {
+    right: auto;
+    left: 5%;
+}
+
+button {
+    background-color: #3846c0;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+button:hover {
+    background-color: #37359c;
+}
+button:active {
+    background-color: #26288b;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
