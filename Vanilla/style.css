@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Amiri;
 }
 
 /* make only the poem section is visible to print */
@@ -16,16 +17,14 @@
 
 body {
     padding: 0px 15px;
+    background-color: #111;
 }
 .poem {
-    font-family: Amiri;
-    font-size: 24px;
+    font-size: 22px;
     color: #dd2380;
-    background-color: #111;
     border-radius: 10px;
     padding: 20px 40px;
     margin: 15px auto;
-    /* width: 97%; */
     max-width: 600px;
 }
 
@@ -66,7 +65,6 @@ body {
     width: 90%;
     max-width: 800px;
     height: 50vh;
-    font-family: Tajawal;
     font-size: 20px;
 }
 .modal #input:focus {
@@ -101,7 +99,6 @@ button {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
-    font-family: Tajawal;
     font-weight: bold;
 }
 button:hover {
