@@ -16,7 +16,7 @@
 }
 
 body {
-    padding: 0px 15px;
+    padding: 0px 20px;
     background-color: #111;
 }
 .poem {
@@ -36,7 +36,6 @@ body {
 }
 
 .ltr {
-    direction: ltr;
     text-align: left;
 }
 
@@ -44,6 +43,9 @@ body {
     position: absolute;
     top: 0;
     color: #eee;
+}
+.ltr .abs {
+    left: 0;
 }
 
 .modal {
